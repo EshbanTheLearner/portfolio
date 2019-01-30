@@ -331,6 +331,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    font-size: 4rem; }
   .projects {
     grid-template-columns: 1fr; } }
