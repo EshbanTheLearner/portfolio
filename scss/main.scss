@@ -186,4 +186,69 @@ main {
   height: 60px;
 }
 
+// Accordion Menu
+.accordion{
+  background-color: lighten($primary-color, 5);
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding:18px;
+  width:100%;
+  text-align: center;
+  border:none;
+  border-bottom: $secondary-color 2px solid;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover{
+  background-color: lighten($primary-color, 10);
+}
+
+.panel{
+  text-align: center;
+  padding:0 18px;
+  background-color: darken($primary-color, 5);
+  color: #ccc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+li{
+  align-items: center;
+  font-size: 18px;
+}
+
+li:nth-child(even) {
+  color: $secondary-color;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: none;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  color: $secondary-color;
+}
+
+.accordion:after{
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float:right;
+  margin-left: 5px;
+}
+
+.active:after{
+  content: "\2796";
+}
+
 @import "mobile";

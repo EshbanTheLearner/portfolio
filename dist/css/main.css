@@ -235,6 +235,60 @@ main {
   color: #fff;
   height: 60px; }
 
+.accordion {
+  background-color: #515151;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-bottom: #eece1a 2px solid;
+  outline: none;
+  transition: 0.4s; }
+
+.active, .accordion:hover {
+  background-color: #5e5e5e; }
+
+.panel {
+  text-align: center;
+  padding: 0 18px;
+  background-color: #373737;
+  color: #ccc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; }
+
+li {
+  align-items: center;
+  font-size: 18px; }
+
+li:nth-child(even) {
+  color: #eece1a; }
+
+table {
+  border-collapse: collapse;
+  width: 100%; }
+
+td, th {
+  border: none;
+  text-align: center;
+  padding: 8px; }
+
+tr:nth-child(even) {
+  color: #eece1a; }
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px; }
+
+.active:after {
+  content: "\2796"; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
